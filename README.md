@@ -30,8 +30,8 @@ Pick the branch/constraint matching your Filament version:
 | Filament | Branch | Constraint | Status |
 |----------|--------|------------|--------|
 | v5 | `3.x` | `^3.0` | Built |
-| v4 | `2.x` | `^2.0` | Planned |
-| v3 | `1.x` | `^1.0` | Planned |
+| v4 | `2.x` | `^2.0` | Built |
+| v3 | `1.x` | `^1.0` | Built |
 
 ## Compatibility
 
