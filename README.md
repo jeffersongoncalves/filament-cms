@@ -1,6 +1,6 @@
 # Filament CMS
 
-![Filament CMS](https://raw.githubusercontent.com/jeffersongoncalves/filament-cms/3.x/art/jeffersongoncalves-filament-cms.png)
+![Filament CMS](https://raw.githubusercontent.com/jeffersongoncalves/filament-cms/2.x/art/jeffersongoncalves-filament-cms.png)
 
 Filament CMS UI plugin — pages, posts, categories, tags, comment moderation, media and navigation menus inside a [Filament](https://filamentphp.com) panel. Resources, actions and widgets, built on top of [`jeffersongoncalves/laravel-cms`](https://github.com/jeffersongoncalves/laravel-cms).
 
@@ -26,14 +26,14 @@ Pick the branch/constraint matching your Filament version:
 | Filament | Branch | Constraint | Status |
 |----------|--------|------------|--------|
 | v5 | `3.x` | `^3.0` | Built |
-| v4 | `2.x` | `^2.0` | Planned |
-| v3 | `1.x` | `^1.0` | Planned |
+| v4 | `2.x` | `^2.0` | Built |
+| v3 | `1.x` | `^1.0` | Built |
 
 ## Compatibility
 
 - **PHP** 8.2+
 - **Laravel** 11.x · 12.x · 13.x
-- **Filament** v5 (this branch)
+- **Filament** v4 (this branch)
 
 ## Development
 
