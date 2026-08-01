@@ -1,5 +1,7 @@
 # Filament CMS
 
+![Filament CMS](https://raw.githubusercontent.com/jeffersongoncalves/filament-cms/3.x/art/jeffersongoncalves-filament-cms.png)
+
 Filament CMS UI plugin — pages, posts, categories, tags, comment moderation, media and navigation menus inside a [Filament](https://filamentphp.com) panel. Resources, actions and widgets, built on top of [`jeffersongoncalves/laravel-cms`](https://github.com/jeffersongoncalves/laravel-cms).
 
 ## Installation
