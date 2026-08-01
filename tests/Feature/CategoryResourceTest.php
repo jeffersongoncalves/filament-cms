@@ -1,9 +1,9 @@
 <?php
 
 use JeffersonGoncalves\Cms\Models\Category;
-use JeffersonGoncalves\FilamentCms\Resources\Categories\Pages\CreateCategory;
-use JeffersonGoncalves\FilamentCms\Resources\Categories\Pages\EditCategory;
-use JeffersonGoncalves\FilamentCms\Resources\Categories\Pages\ListCategories;
+use JeffersonGoncalves\FilamentCms\Resources\CategoryResource\Pages\CreateCategory;
+use JeffersonGoncalves\FilamentCms\Resources\CategoryResource\Pages\EditCategory;
+use JeffersonGoncalves\FilamentCms\Resources\CategoryResource\Pages\ListCategories;
 use Livewire\Livewire;
 
 beforeEach(function () {

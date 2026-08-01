@@ -1,12 +1,12 @@
 <?php
 
-use JeffersonGoncalves\FilamentCms\Resources\Categories\CategoryResource;
-use JeffersonGoncalves\FilamentCms\Resources\Comments\CommentResource;
-use JeffersonGoncalves\FilamentCms\Resources\Media\MediaResource;
-use JeffersonGoncalves\FilamentCms\Resources\Menus\MenuResource;
-use JeffersonGoncalves\FilamentCms\Resources\Pages\PageResource;
-use JeffersonGoncalves\FilamentCms\Resources\Posts\PostResource;
-use JeffersonGoncalves\FilamentCms\Resources\Tags\TagResource;
+use JeffersonGoncalves\FilamentCms\Resources\CategoryResource;
+use JeffersonGoncalves\FilamentCms\Resources\CommentResource;
+use JeffersonGoncalves\FilamentCms\Resources\MediaResource;
+use JeffersonGoncalves\FilamentCms\Resources\MenuResource;
+use JeffersonGoncalves\FilamentCms\Resources\PageResource;
+use JeffersonGoncalves\FilamentCms\Resources\PostResource;
+use JeffersonGoncalves\FilamentCms\Resources\TagResource;
 use JeffersonGoncalves\FilamentCms\Widgets\CmsCoreStatsWidget;
 
 return [

@@ -2,8 +2,8 @@
 
 namespace JeffersonGoncalves\FilamentCms\RelationManagers;
 
-use Filament\Actions;
 use Filament\Resources\RelationManagers\RelationManager;
+use Filament\Tables\Actions;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use JeffersonGoncalves\Cms\Models\Page;
@@ -32,7 +32,7 @@ class RevisionsRelationManager extends RelationManager
             ])
             ->defaultSort('created_at', 'desc')
             ->headerActions([])
-            ->recordActions([
+            ->actions([
                 Actions\Action::make('restore')
                     ->icon('heroicon-o-arrow-uturn-left')
                     ->requiresConfirmation()

@@ -1,9 +1,9 @@
 <?php
 
 use JeffersonGoncalves\Cms\Models\Menu;
-use JeffersonGoncalves\FilamentCms\Resources\Menus\Pages\CreateMenu;
-use JeffersonGoncalves\FilamentCms\Resources\Menus\Pages\EditMenu;
-use JeffersonGoncalves\FilamentCms\Resources\Menus\Pages\ListMenus;
+use JeffersonGoncalves\FilamentCms\Resources\MenuResource\Pages\CreateMenu;
+use JeffersonGoncalves\FilamentCms\Resources\MenuResource\Pages\EditMenu;
+use JeffersonGoncalves\FilamentCms\Resources\MenuResource\Pages\ListMenus;
 use Livewire\Livewire;
 
 beforeEach(function () {

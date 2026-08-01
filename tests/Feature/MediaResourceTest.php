@@ -1,7 +1,7 @@
 <?php
 
-use JeffersonGoncalves\FilamentCms\Resources\Media\Pages\EditMedia;
-use JeffersonGoncalves\FilamentCms\Resources\Media\Pages\ListMedia;
+use JeffersonGoncalves\FilamentCms\Resources\MediaResource\Pages\EditMedia;
+use JeffersonGoncalves\FilamentCms\Resources\MediaResource\Pages\ListMedia;
 use Livewire\Livewire;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 

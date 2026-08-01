@@ -2,9 +2,9 @@
 
 use JeffersonGoncalves\Cms\Enums\PostStatus;
 use JeffersonGoncalves\Cms\Models\Post;
-use JeffersonGoncalves\FilamentCms\Resources\Posts\Pages\CreatePost;
-use JeffersonGoncalves\FilamentCms\Resources\Posts\Pages\EditPost;
-use JeffersonGoncalves\FilamentCms\Resources\Posts\Pages\ListPosts;
+use JeffersonGoncalves\FilamentCms\Resources\PostResource\Pages\CreatePost;
+use JeffersonGoncalves\FilamentCms\Resources\PostResource\Pages\EditPost;
+use JeffersonGoncalves\FilamentCms\Resources\PostResource\Pages\ListPosts;
 use Livewire\Livewire;
 
 beforeEach(function () {

@@ -1,8 +1,8 @@
 <?php
 
 use JeffersonGoncalves\Cms\Models\Menu;
-use JeffersonGoncalves\FilamentCms\Resources\Menus\Pages\EditMenu;
-use JeffersonGoncalves\FilamentCms\Resources\Menus\RelationManagers\MenuItemsRelationManager;
+use JeffersonGoncalves\FilamentCms\Resources\MenuResource\Pages\EditMenu;
+use JeffersonGoncalves\FilamentCms\Resources\MenuResource\RelationManagers\MenuItemsRelationManager;
 use Livewire\Livewire;
 
 beforeEach(function () {

@@ -1,9 +1,9 @@
 <?php
 
 use JeffersonGoncalves\Cms\Models\Tag;
-use JeffersonGoncalves\FilamentCms\Resources\Tags\Pages\CreateTag;
-use JeffersonGoncalves\FilamentCms\Resources\Tags\Pages\EditTag;
-use JeffersonGoncalves\FilamentCms\Resources\Tags\Pages\ListTags;
+use JeffersonGoncalves\FilamentCms\Resources\TagResource\Pages\CreateTag;
+use JeffersonGoncalves\FilamentCms\Resources\TagResource\Pages\EditTag;
+use JeffersonGoncalves\FilamentCms\Resources\TagResource\Pages\ListTags;
 use Livewire\Livewire;
 
 beforeEach(function () {

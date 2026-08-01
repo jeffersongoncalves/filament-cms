@@ -2,11 +2,11 @@
 
 namespace JeffersonGoncalves\FilamentCms\RelationManagers;
 
-use Filament\Actions;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
+use Filament\Forms\Form;
 use Filament\Resources\RelationManagers\RelationManager;
-use Filament\Schemas\Schema;
+use Filament\Tables\Actions;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
@@ -20,9 +20,9 @@ class CommentsRelationManager extends RelationManager
 {
     protected static string $relationship = 'comments';
 
-    public function form(Schema $schema): Schema
+    public function form(Form $form): Form
     {
-        return $schema->components([
+        return $form->schema([
             Select::make('status')
                 ->options(CommentStatus::class)
                 ->required(),
@@ -53,7 +53,7 @@ class CommentsRelationManager extends RelationManager
                 SelectFilter::make('status')
                     ->options(CommentStatus::class),
             ])
-            ->recordActions([
+            ->actions([
                 Actions\Action::make('approve')
                     ->icon('heroicon-o-check')
                     ->color('success')
@@ -62,7 +62,7 @@ class CommentsRelationManager extends RelationManager
                 Actions\EditAction::make(),
                 Actions\DeleteAction::make(),
             ])
-            ->toolbarActions([
+            ->bulkActions([
                 Actions\BulkActionGroup::make([
                     Actions\DeleteBulkAction::make(),
                 ]),

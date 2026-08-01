@@ -3,8 +3,8 @@
 use JeffersonGoncalves\Cms\Enums\CommentStatus;
 use JeffersonGoncalves\Cms\Enums\PageStatus;
 use JeffersonGoncalves\Cms\Models\Page;
-use JeffersonGoncalves\FilamentCms\Resources\Comments\Pages\EditComment;
-use JeffersonGoncalves\FilamentCms\Resources\Comments\Pages\ListComments;
+use JeffersonGoncalves\FilamentCms\Resources\CommentResource\Pages\EditComment;
+use JeffersonGoncalves\FilamentCms\Resources\CommentResource\Pages\ListComments;
 use Livewire\Livewire;
 
 beforeEach(function () {

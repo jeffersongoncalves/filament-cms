@@ -2,9 +2,9 @@
 
 use JeffersonGoncalves\Cms\Enums\PageStatus;
 use JeffersonGoncalves\Cms\Models\Page;
-use JeffersonGoncalves\FilamentCms\Resources\Pages\Pages\CreatePage;
-use JeffersonGoncalves\FilamentCms\Resources\Pages\Pages\EditPage;
-use JeffersonGoncalves\FilamentCms\Resources\Pages\Pages\ListPages;
+use JeffersonGoncalves\FilamentCms\Resources\PageResource\Pages\CreatePage;
+use JeffersonGoncalves\FilamentCms\Resources\PageResource\Pages\EditPage;
+use JeffersonGoncalves\FilamentCms\Resources\PageResource\Pages\ListPages;
 use Livewire\Livewire;
 
 beforeEach(function () {
