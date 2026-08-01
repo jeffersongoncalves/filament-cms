@@ -1,0 +1,71 @@
+<?php
+
+namespace JeffersonGoncalves\FilamentCms\Resources\Posts;
+
+use BackedEnum;
+use Filament\Resources\Resource;
+use Filament\Schemas\Schema;
+use Filament\Support\Icons\Heroicon;
+use Filament\Tables\Table;
+use JeffersonGoncalves\Cms\Models\Post;
+use JeffersonGoncalves\FilamentCms\FilamentCmsPlugin;
+use JeffersonGoncalves\FilamentCms\RelationManagers\CommentsRelationManager;
+use JeffersonGoncalves\FilamentCms\RelationManagers\RevisionsRelationManager;
+use JeffersonGoncalves\FilamentCms\Resources\Posts\Pages\CreatePost;
+use JeffersonGoncalves\FilamentCms\Resources\Posts\Pages\EditPost;
+use JeffersonGoncalves\FilamentCms\Resources\Posts\Pages\ListPosts;
+use JeffersonGoncalves\FilamentCms\Resources\Posts\Schemas\PostForm;
+use JeffersonGoncalves\FilamentCms\Resources\Posts\Tables\PostsTable;
+use JeffersonGoncalves\FilamentTranslatable\Resources\Concerns\Translatable;
+
+class PostResource extends Resource
+{
+    use Translatable;
+
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedNewspaper;
+
+    protected static ?int $navigationSort = 2;
+
+    protected static ?string $recordTitleAttribute = 'title';
+
+    public static function getModel(): string
+    {
+        return config('cms-core.models.post', Post::class);
+    }
+
+    public static function getNavigationGroup(): ?string
+    {
+        try {
+            return FilamentCmsPlugin::get()->getNavigationGroup();
+        } catch (\Throwable) {
+            return config('filament-cms.navigation_group', 'CMS — Content');
+        }
+    }
+
+    public static function form(Schema $schema): Schema
+    {
+        return PostForm::configure($schema);
+    }
+
+    public static function table(Table $table): Table
+    {
+        return PostsTable::configure($table);
+    }
+
+    public static function getRelations(): array
+    {
+        return [
+            CommentsRelationManager::class,
+            RevisionsRelationManager::class,
+        ];
+    }
+
+    public static function getPages(): array
+    {
+        return [
+            'index' => ListPosts::route('/'),
+            'create' => CreatePost::route('/create'),
+            'edit' => EditPost::route('/{record}/edit'),
+        ];
+    }
+}

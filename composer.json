@@ -1,0 +1,82 @@
+{
+    "name": "jeffersongoncalves/filament-cms",
+    "description": "Filament v5 panel plugin bundling the full Laravel CMS ecosystem (pages, posts, categories, tags, comments, media, menus) into one panel plugin.",
+    "keywords": [
+        "laravel",
+        "filament",
+        "filament-plugin",
+        "cms",
+        "page",
+        "post",
+        "blog",
+        "media",
+        "menu"
+    ],
+    "homepage": "https://github.com/jeffersongoncalves/filament-cms",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^5.3",
+        "jeffersongoncalves/filament-translatable": "^3.0",
+        "jeffersongoncalves/laravel-cms": "dev-main",
+        "spatie/laravel-medialibrary": "^11.0|^12.0",
+        "spatie/laravel-package-tools": "^1.14.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.21",
+        "orchestra/testbench": "^10.0|^11.0",
+        "pestphp/pest": "^3.0|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../laravel/laravel-cms"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JeffersonGoncalves\\FilamentCms\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeffersonGoncalves\\FilamentCms\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint",
+        "test": "vendor/bin/pest"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeffersonGoncalves\\FilamentCms\\FilamentCmsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/jeffersongoncalves/filament-cms/issues",
+        "source": "https://github.com/jeffersongoncalves/filament-cms"
+    }
+}
