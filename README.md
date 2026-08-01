@@ -36,7 +36,7 @@ Pick the branch/constraint matching your Filament version:
 ## Compatibility
 
 - **PHP** 8.2+
-- **Laravel** 11.x · 12.x · 13.x
+- **Laravel** 12.x · 13.x
 - **Filament** v5 (this branch)
 
 ## Development
