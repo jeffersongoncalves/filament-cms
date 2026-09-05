@@ -10,6 +10,20 @@
 
 Filament CMS UI plugin — pages, posts, categories, tags, comment moderation, media and navigation menus inside a [Filament](https://filamentphp.com) panel. Resources, actions and widgets, built on top of [`jeffersongoncalves/laravel-cms`](https://github.com/jeffersongoncalves/laravel-cms).
 
+## Version Compatibility
+
+Pick the branch/constraint matching your Filament version:
+
+| Filament | Branch | Constraint | Status |
+|----------|--------|------------|--------|
+| v5 | `3.x` | `^3.0` | Built |
+| v4 | `2.x` | `^2.0` | Built |
+| v3 | `1.x` | `^1.0` | Built |
+
+- **PHP** 8.2+
+- **Laravel** 12.x · 13.x
+- **Filament** v4 (this branch)
+
 ## Installation
 
 ```bash
@@ -24,22 +38,6 @@ public function panel(Panel $panel): Panel
     return $panel->plugin(FilamentCmsPlugin::make());
 }
 ```
-
-## Versions
-
-Pick the branch/constraint matching your Filament version:
-
-| Filament | Branch | Constraint | Status |
-|----------|--------|------------|--------|
-| v5 | `3.x` | `^3.0` | Built |
-| v4 | `2.x` | `^2.0` | Built |
-| v3 | `1.x` | `^1.0` | Built |
-
-## Compatibility
-
-- **PHP** 8.2+
-- **Laravel** 12.x · 13.x
-- **Filament** v4 (this branch)
 
 ## Development
 
@@ -61,6 +59,11 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 ## Security Vulnerabilities
 
 Please see [SECURITY](.github/SECURITY.md) for details.
+
+## Credits
+
+- [Jefferson Gonçalves](https://github.com/jeffersongoncalves)
+- [All Contributors](../../contributors)
 
 ## License
 
