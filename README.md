@@ -1,8 +1,12 @@
+<div class="filament-hidden">
+
+![Filament CMS](https://raw.githubusercontent.com/jeffersongoncalves/filament-cms/1.x/art/jeffersongoncalves-filament-cms.png)
+
+</div>
+
 # Filament CMS
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jeffersongoncalves)
-
-![Filament CMS](https://raw.githubusercontent.com/jeffersongoncalves/filament-cms/1.x/art/jeffersongoncalves-filament-cms.png)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-cms.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-cms)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-cms/tests.yml?branch=1.x&label=tests&style=flat-square)](https://github.com/jeffersongoncalves/filament-cms/actions?query=workflow%3Atests+branch%3A1.x)
